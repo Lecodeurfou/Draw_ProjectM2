@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LeapMotion/Modules/DetectionExamples/Scenes/PinchDrawDemo.unity
+    path: Assets/Draw_Scene/PinchDrawDemo.unity
     guid: 547a168b13abb48f88d8f57b02b57846
+  - enabled: 1
+    path: Assets/Draw_Scene/Start_Scene.unity
+    guid: 04a31bfdb98ddc3448d5034a9a3dfd8e
+  - enabled: 1
+    path: Assets/Draw_Scene/Forest_Scene.unity
+    guid: 0e973da41bc467143ada93d0e6498dc4
+  - enabled: 1
+    path: Assets/Draw_Scene/Generated_World.unity
+    guid: d73fa37c425cee8489fa958c835e12ba
+  - enabled: 1
+    path: Assets/Draw_Scene/SciFiScene.unity
+    guid: e8cf1d29775c7e24f9dd35148a6437c0
   m_configObjects: {}

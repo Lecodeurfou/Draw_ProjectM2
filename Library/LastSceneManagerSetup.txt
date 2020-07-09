@@ -1,4 +1,5 @@
 sceneSetups:
-- path: Assets/LeapMotion/Modules/DetectionExamples/Scenes/PinchDrawDemo.unity
+- path: Assets/Liquid-Simulation-master/Assets/Scenes/Liquid3D.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0

@@ -10,6 +10,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,7 +22,7 @@ using Hover.Core.Items.Types;
 using SimpleJSON;
 using TMPro;
 using UnityEngine.EventSystems;
-using UnityEngine.Experimental.PlayerLoop;
+//using UnityEngine.Experimental.PlayerLoop;
 
 //[RequireComponent(typeof(BoxSlider), typeof(RawImage)), ExecuteInEditMode()]
 
@@ -292,6 +293,7 @@ namespace Leap.Unity.DetectionExamples {
 
       if (state == 12)
         SaveScene();
+      
 
     }
     Vector3 tmp = new Vector3(0,0,0);
@@ -395,6 +397,7 @@ namespace Leap.Unity.DetectionExamples {
     }
     
     private Rigidbody camShape;
+    public GameObject LMHeadMountedRig;
     void deplacement()
     {
 
@@ -402,31 +405,34 @@ namespace Leap.Unity.DetectionExamples {
       {
         var detector = _pinchDetectors[i];
         var drawState = _drawStates[i];
-        
+        LMHeadMountedRig = GameObject.Find("LMHeadMountedRig");
         if (detector == _pinchDetectors[1] && !isTurning) 
         {
           if (detector.DidStartHold)
           {
+            
             asPinchPosition = rightPinch.transform.position.y;
             camShape = cam.GetComponent<Rigidbody>();
             isMoving = true;
+
+
           }
 
           if (detector.IsHolding)
           {
+            LMHeadMountedRig.GetComponent<Rigidbody>().useGravity =false;
             position = (asPinchPosition - rightPinch.transform.position.y);
-            camShape.velocity = camShape.transform.forward * position * -20;
+            camShape.velocity = (camShape.transform.forward * position * -40f);   // formule de translation de la cam lors du pinch
+
           }
 
           if (detector.DidRelease)
           {
             isMoving = false;
             camShape.velocity = new Vector3(0,0,0);
+            LMHeadMountedRig.GetComponent<Rigidbody>().useGravity =true;
           }
         }
-
-        
-        
 
         else if (detector == _pinchDetectors[0] && !isMoving)
         {
@@ -441,7 +447,7 @@ namespace Leap.Unity.DetectionExamples {
           if (detector.IsHolding)
           {
             position = asPinchPosition - pinchL.transform.position.y;
-            camShape.MoveRotation(Quaternion.Euler(cam.transform.localRotation.x, cam.transform.eulerAngles.y + (position * 20), cam.transform.localRotation.z));
+            camShape.MoveRotation(Quaternion.Euler(cam.transform.localRotation.x, cam.transform.eulerAngles.y + (position * 20f), cam.transform.localRotation.z));
           }
 
           if (detector.DidRelease)
@@ -452,6 +458,11 @@ namespace Leap.Unity.DetectionExamples {
         
         
     }
+
+            void LoadMap()
+        {
+          
+        }
   }
     
 /*    int getHand(String detector)

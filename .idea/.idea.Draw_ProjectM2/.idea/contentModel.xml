@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Nness\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Nness\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Draw_Project_V1.996555366.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Nness\Desktop\Draw_Project_V1" t="IncludeRecursive">
+    <e p="C:\Users\Nness\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Nness\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Draw_ProjectM2.-1450449822.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Nness\Documents\Draw_ProjectM2" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -611,6 +611,20 @@
             </e>
           </e>
         </e>
+        <e p="Liquid-Simulation-master" t="Include">
+          <e p="Assets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="BlurController.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="BlurEffect.shader" t="Include" />
+              <e p="UnlitTransparent.shader" t="Include" />
+            </e>
+          </e>
+          <e p="ProjectSettings" t="Include">
+            <e p="ProjectVersion.txt" t="Include" />
+          </e>
+        </e>
         <e p="personamove.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="HSV-Color-Picker-Unity-master" t="Include">
@@ -668,6 +682,24 @@
         </e>
         <e p="readme.txt" t="Include" />
         <e p="reset.cs" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="BlurShader.shader" t="Include" />
+          <e p="CellShading.shader" t="Include" />
+          <e p="ContourShader.shader" t="Include" />
+          <e p="GeowireShader.shader" t="Include" />
+          <e p="HoloSurfShad.shader" t="Include" />
+          <e p="NeigeShader.shader" t="Include" />
+          <e p="oil_painting.shader" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="ColorHue.shader" t="Include" />
+            <e p="ColorSaturationBrightness.shader" t="Include" />
+            <e p="Lightsaber.shader" t="Include" />
+            <e p="Neon.shader" t="Include" />
+            <e p="SolidColor.shader" t="Include" />
+          </e>
+          <e p="SobelShader.shader" t="Include" />
+          <e p="Standard_Hand_Make.shader" t="Include" />
+        </e>
         <e p="SaveObjInfo.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ColorHuePicker.cs" t="Include" />
@@ -676,7 +708,13 @@
           <e p="Draggable.cs" t="Include" />
           <e p="ExampleColorReceiver.cs" t="Include" />
           <e p="HSBColor.cs" t="Include" />
+          <e p="Liquid" t="Include">
+            <e p="waterCannon.cs" t="Include" />
+            <e p="waterCollision.cs" t="Include" />
+          </e>
           <e p="load.cs" t="Include" />
+          <e p="MapGenerator.cs" t="Include" />
+          <e p="Noise.cs" t="Include" />
           <e p="save.cs" t="Include" />
           <e p="saveload.cs" t="Include" />
           <e p="ScripHandmade" t="Include">
@@ -685,24 +723,10 @@
             <e p="PinchDetector2.cs" t="Include" />
             <e p="useShaders.cs" t="Include" />
           </e>
+          <e p="Wobble.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
-          <e p="ColorHue.shader" t="Include" />
-          <e p="ColorSaturationBrightness.shader" t="Include" />
-          <e p="Lightsaber.shader" t="Include" />
-          <e p="Neon.shader" t="Include" />
-          <e p="Shader_hand_make" t="Include">
-            <e p="BlurShader.shader" t="Include" />
-            <e p="CellShading.shader" t="Include" />
-            <e p="ContourShader.shader" t="Include" />
-            <e p="GeowireShader.shader" t="Include" />
-            <e p="HoloSurfShad.shader" t="Include" />
-            <e p="NeigeShader.shader" t="Include" />
-            <e p="oil_painting.shader" t="Include" />
-            <e p="SobelShader.shader" t="Include" />
-            <e p="Standard_Hand_Make.shader" t="Include" />
-          </e>
-          <e p="SolidColor.shader" t="Include" />
+          <e p="liquid.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">
@@ -730,13 +754,10 @@
           </e>
         </e>
       </e>
-      <e p="Draw_Project_V1.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
+      <e p="Draw_ProjectM2.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

@@ -23,6 +23,11 @@ TagManager:
   - loadCont
   - loadDel
   - DungeonBiom
+  - water
+  - center
+  - waterObj
+  - WaterBombe
+  - ground
   layers:
   - Default
   - TransparentFX
@@ -33,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - LiquidEffectLayer
   - 
   - 
   - 

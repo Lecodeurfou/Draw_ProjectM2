@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-11-06T15:19:40.600+01:00
-  initializedAtString: 2019-11-06T15:19:40.600+01:00
+  lastUpdatedAtString: 2020-03-03T14:11:32.557+01:00
+  initializedAtString: 2020-03-03T14:11:32.557+01:00
   currentGitRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/Lecodeurfou/Draw_ProjectM2.git
     login: 
     user: 
     host: 
@@ -25,14 +25,14 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: 
+    tracking: origin/master
   currentConfigBranch:
     name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/Lecodeurfou/Draw_ProjectM2.git
+    trackingBranch: master
   currentConfigRemote:
-    name: 
-    url: 
+    name: origin
+    url: https://github.com/Lecodeurfou/Draw_ProjectM2.git
   currentHead: 
